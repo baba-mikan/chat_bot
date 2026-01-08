@@ -8,7 +8,8 @@
     "start": "node backend/src/server.js",
     "dev": "node --watch backend/src/server.js",
     "index": "node backend/src/scripts/indexDocuments.js",
-    "index:mock": "node backend/src/scripts/createMockVectors.js"
+    "index:mock": "node backend/src/scripts/createMockVectors.js",
+    "test:notion": "node backend/src/scripts/testNotion.js"
   },
   "keywords": ["chatbot", "rag", "notion", "claude", "support"],
   "author": "",
