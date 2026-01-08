@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mikan for School サポートBot</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>🍊 mikan for School サポートBot</h1>
+            <p>使い方やトラブル対応についてお答えします</p>
+        </div>
+
+        <div class="sample-questions">
+            <button class="sample-question" data-question="生徒を追加するにはどうすればいいですか？">生徒を追加するには？</button>
+            <button class="sample-question" data-question="生徒がログインできないのですが、どうすればいいですか？">ログインできない生徒がいます</button>
+            <button class="sample-question" data-question="学習データの見方を教えてください">学習データの見方は？</button>
+        </div>
+
+        <div class="messages" id="messages">
+            <div class="message assistant">
+                <div class="message-content">
+                    こんにちは！mikan for Schoolのサポートbotです。<br>
+                    管理画面の操作方法、生徒への指導のコツ、トラブル対応など、お気軽にご質問ください。
+                </div>
+            </div>
+        </div>
+
+        <div class="input-area">
+            <input
+                type="text"
+                id="messageInput"
+                placeholder="質問を入力してください..."
+                autocomplete="off"
+            />
+            <button id="sendButton">送信</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

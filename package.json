@@ -1,0 +1,24 @@
+{
+  "name": "mikan-support-chatbot",
+  "version": "1.0.0",
+  "description": "mikan for School サポートチャットボット - RAGベースのサポートシステム",
+  "main": "backend/src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "dev": "node --watch backend/src/server.js",
+    "index": "node backend/src/scripts/indexDocuments.js"
+  },
+  "keywords": ["chatbot", "rag", "notion", "claude", "support"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.32.1",
+    "@notionhq/client": "^2.2.15",
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "openai": "^4.28.0"
+  },
+  "devDependencies": {}
+}
