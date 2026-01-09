@@ -8,6 +8,7 @@
     "start": "node backend/src/server.js",
     "dev": "node --watch backend/src/server.js",
     "index": "node backend/src/scripts/indexDocuments.js",
+    "index:local": "node backend/src/scripts/indexLocalDocuments.js",
     "index:mock": "node backend/src/scripts/createMockVectors.js",
     "test:notion": "node backend/src/scripts/testNotion.js"
   },
@@ -20,7 +21,8 @@
     "express": "^4.18.2",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
-    "openai": "^4.28.0"
+    "openai": "^4.28.0",
+    "pdf-parse": "^1.1.1"
   },
   "devDependencies": {}
 }
